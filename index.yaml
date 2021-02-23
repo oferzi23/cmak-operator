@@ -3,6 +3,34 @@ entries:
   cmak-operator:
   - apiVersion: v2
     appVersion: 3.0.0.5-7e7a22e
+    created: "2021-02-23T20:01:07.182527688Z"
+    description: Manage and vizualize Kafka clusters with CMAK (prev. Kafka Manager).
+    digest: 41c11fe50195b9d174700dbd3a6b36fdb14269566fc75d22599a161825a3e87c
+    home: https://github.com/eshepelyuk/cmak-operator
+    icon: https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg
+    keywords:
+    - cmak
+    - operator
+    - kafka-manager
+    - kafka
+    - kubernetes
+    - ui
+    - monitoring
+    - streaming
+    maintainers:
+    - email: eshepelyuk@gmail.com
+      name: Ievgenii Shepeliuk
+      url: https://github.com/eshepelyuk
+    name: cmak-operator
+    sources:
+    - https://github.com/yahoo/CMAK
+    - https://github.com/hleb-albau/kafka-manager-docker
+    type: application
+    urls:
+    - cmak-operator-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
+    appVersion: 3.0.0.5-7e7a22e
     created: "2021-02-23T19:24:16.350710019Z"
     description: Manage and vizualize Kafka clusters with CMAK (prev. Kafka Manager).
     digest: 6418139f7dfeebec75a70977d55ce98a7a7599da862038495b947d0f8fed551e
@@ -428,4 +456,4 @@ entries:
     urls:
     - cmak-operator-0.2.0.tgz
     version: 0.2.0
-generated: "2021-02-23T19:24:16.347670506Z"
+generated: "2021-02-23T20:01:07.179550478Z"
