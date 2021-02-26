@@ -28,7 +28,7 @@ jobs:
           version: 'v1.20.0'
       - run: |
           skaffold version
-      - uses: AbsaOSS/k3d-action@v1.2.0
+      - uses: AbsaOSS/k3d-action@v1.3.0
         name: create cluster
         with:
           cluster-name: "cmak"
@@ -37,5 +37,5 @@ jobs:
             --config ./k3d.yaml
       - name: e2e test
         run: |
-          sleep 20
+          kubectl get node
           ./e2e.sh
