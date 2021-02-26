@@ -9,8 +9,14 @@ fi
 
 skaffold config set default-repo "${REGISTRY}:5000"
 touch values-dev.yaml
-skaffold run
+skaffold run -p e2e
 
 [ "$(helm ls --deployed -q | wc -l)" -eq 1 ]
 
-kubectl get all
+kubectl port-forward deploy/cmak 9000:9000 &
+
+[ "$(curl -s http://localhost:9000/api/status/clusters | jq '.clusters.active | length')" -eq 2 ]
+
+kill $!
+
+skaffold delete -p e2e
