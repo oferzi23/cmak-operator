@@ -19,4 +19,3 @@ kubectl port-forward deploy/cmak 9000:9000 &
 
 kill $!
 
-skaffold delete -p e2e
